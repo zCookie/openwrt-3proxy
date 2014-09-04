@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ENABLED=yes
+PROCS=3proxy
+ARGS="/etc/3proxy/3proxy.cfg"
+PREARGS=""
+DESC=$PROCS
+PATH=/usr/sbin:/usr/bin:/sbin:/bin:/opt/sbin:/opt/bin:/opt/usr/bin:/usr/local/sbin:/usr/local/bin
+
+. /etc/init.d/rc.func
