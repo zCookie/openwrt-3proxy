@@ -5,7 +5,7 @@ PKG_VERSION:=0.8b-devel
 PKG_RELEASE:=1
 
 PKG_SOURCE_URL:=https://github.com/zCookie/openwrt-3proxy/archive
-PKG_SOURCE:=$3proxy-(PKG_VERSION).tar.gz
+PKG_SOURCE:=3proxy-$(PKG_VERSION).tar.gz
 PKG_MAINTAINER:=zCookie <imwifier@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
