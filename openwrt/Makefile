@@ -1,8 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=3proxy
-PKG_VERSION:=0.8-devel
+PKG_VERSION:=0.8b-devel
 PKG_RELEASE:=1
+
+PKG_SOURCE_URL:=https://github.com/zCookie/openwrt-3proxy/archive
+PKG_SOURCE:=$(PKG_VERSION).tar.gz
+PKG_MAINTAINER:=zCookie <imwifier@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
 
