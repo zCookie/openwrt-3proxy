@@ -1,5 +1,5 @@
---- /home/ckl/3py/3proxy/scripts/add3proxyuser.sh	2009-07-21 02:48:26.000000000 +0800
-+++ /home/ckl/3py/3proxy/scripts/add3proxyuser_openwrt.sh	2014-09-04 10:47:38.676407318 +0800
+--- a/scripts/add3proxyuser.sh
++++ b/scripts/add3proxyuser.sh
 @@ -1,8 +1,8 @@
  #!/bin/sh
  if [ $4 ]; then  

@@ -5,7 +5,7 @@ PKG_VERSION:=0.8b-devel
 PKG_RELEASE:=1
 
 PKG_SOURCE_URL:=https://github.com/zCookie/openwrt-3proxy/archive
-PKG_SOURCE:=$(PKG_VERSION).tar.gz
+PKG_SOURCE:=$3proxy-(PKG_VERSION).tar.gz
 PKG_MAINTAINER:=zCookie <imwifier@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
@@ -16,8 +16,8 @@ define Package/3proxy
 	SUBMENU:=Web Servers/Proxies
 	DEPENDS:=+libpthread +libopenssl
 	TITLE:=3proxy free proxy server for openwrt
-	URL:=http://www.3proxy.ru
-	MAINTAINER:=imwifier@gmail.com
+	URL:=https://github.com/zCookie/openwrt-3proxy
+	MAINTAINER:=$(PKG_MAINTAINER)
 endef
 
 define Package/3proxy/description
@@ -27,10 +27,10 @@ define Package/3proxy/description
 endef
 
 define Package/3proxy/conffiles
-etc/3proxy/3proxy.cfg
-etc/3proxy/bandlimiters
-etc/3proxy/counters
-etc/3proxy/passwd
+	etc/3proxy/3proxy.cfg
+	etc/3proxy/bandlimiters
+	etc/3proxy/counters
+	etc/3proxy/passwd
 endef
 
 define Build/Configure

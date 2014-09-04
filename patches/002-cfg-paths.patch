@@ -1,5 +1,7 @@
---- /home/ckl/3py/3proxy/scripts/3proxy.cfg	2009-07-14 16:17:31.000000000 +0800
-+++ /home/ckl/3py/3proxy/scripts/3proxy_openwrt.cfg	2014-09-04 10:45:34.636403996 +0800
+Index: 3proxy/scripts/3proxy.cfg
+===================================================================
+--- 3proxy.orig/scripts/3proxy.cfg	2009-07-14 16:17:31.000000000 +0800
++++ 3proxy/scripts/3proxy.cfg	2014-09-04 15:13:34.916834613 +0800
 @@ -1,23 +1,23 @@
 -#!/usr/local/etc/3proxy/bin/3proxy
 +#!/usr/bin/3proxy
@@ -21,7 +23,7 @@
 +monitor /etc/3proxy/bandlimiters
  
 -log /usr/local/etc/3proxy/log/log D
-+log /var/log/3proxy.log D
++og /var/log/3proxy.log D
  rotate 60
 -counter /usr/local/etc/3proxy/3proxy.3cf
 +counter /etc/3proxy/3proxy.3cf
