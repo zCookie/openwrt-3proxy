@@ -1,6 +1,6 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=3proxy
+PKG_NAME:=openwrt-3proxy-3proxy
 PKG_VERSION:=0.8b-devel
 PKG_RELEASE:=1
 
